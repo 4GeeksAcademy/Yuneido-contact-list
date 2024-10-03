@@ -28,7 +28,7 @@ const AddContact = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value.trim });
+    setFormData({ ...formData, [name]: value.trim() });
   };
 
   const handleSubmit = (e) => {
