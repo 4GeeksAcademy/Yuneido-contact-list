@@ -34,7 +34,7 @@ const ContactCard = (props) => {
     : (e) => console.log("No se ha asociado una funcion para editar");
 
   return (
-    <div className="container-fluid border p-3">
+    <div className="container-fluid border p-3 ">
       <div className="row">
         <div className="col-md-2 col-sm-12 d-flex justify-content-center align-items-center ">
           <div id="avatar-container">
@@ -49,15 +49,15 @@ const ContactCard = (props) => {
             style={{ listStyle: "none" }}
             className="d-flex flex-column gap-1 align-items-start ps-0"
           >
-            <li>
-              <FontAwesomeIcon icon={faLocationDot} className="me-2" />
+            <li className="text-secondary">
+              <FontAwesomeIcon icon={faLocationDot} className="me-2 " />
               <span className="contact-info">{address}</span>
             </li>
-            <li>
-              <FontAwesomeIcon icon={faPhone} className="me-2" />
+            <li className="text-secondary">
+              <FontAwesomeIcon icon={faPhone} className="me-2 " />
               <span className="contact-info">{phone}</span>
             </li>
-            <li>
+            <li className="text-secondary">
               <FontAwesomeIcon icon={faEnvelope} className="me-2" />
               <span className="contact-info">{mail}</span>
             </li>
@@ -72,10 +72,7 @@ const ContactCard = (props) => {
                 toEdit(props.contactId);
               }}
             >
-              <FontAwesomeIcon
-                icon={faPencil}
-                className="text-warning btn btn-dark"
-              />
+              <FontAwesomeIcon icon={faPencil} className="btn" />
             </a>
             <a
               href="#"
@@ -84,7 +81,7 @@ const ContactCard = (props) => {
                 toDelete(props.contactId);
               }}
             >
-              <FontAwesomeIcon icon={faTrashCan} className="btn btn-danger" />
+              <FontAwesomeIcon icon={faTrashCan} className="btn " />
             </a>
           </div>
         </div>

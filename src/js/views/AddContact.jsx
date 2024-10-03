@@ -63,7 +63,7 @@ const AddContact = () => {
       <h1 className="text-center">
         {contactId
           ? `Editando el contacto: ${contactId}`
-          : "Add new Contact"}
+          : "Add new contact"}
       </h1>
       <form onSubmit={handleSubmit}>
         <div className="mb-3">
@@ -110,8 +110,8 @@ const AddContact = () => {
             value={formData.address}
           />
         </div>
-        <button type="submit" className="btn btn-primary">
-          Enviar
+        <button type="submit" className="btn btn-primary w-100">
+          save
         </button>
       </form>
       <Link to="/">Or get back to contacts</Link>
